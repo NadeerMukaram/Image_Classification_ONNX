@@ -1,0 +1,22 @@
+use Python 3.9.5
+
+Terminal: 
+
+git clone https://github.com/onnx/tensorflow-onnx.git
+
+C:\Users\username_location\AppData\Local\Programs\Python\Python39\python.exe -m pip install tensorflow
+
+C:\Users\username_location\AppData\Local\Programs\Python\Python39\python.exe -m pip install onnxruntime
+
+C:\Users\username_location\AppData\Local\Programs\Python\Python39\python.exe -m pip install onnx==1.14.1 
+
+C:\Users\username_location\AppData\Local\Programs\Python\Python39\python.exe -m pip install -U tf2onnx
+
+cd ./folder_name/ < -- if you want to save in a specific folder 
+
+then execute this
+
+C:\Users\armuk\AppData\Local\Programs\Python\Python39\python.exe -m tf2onnx.convert --saved-model file_location_where_saved_model_was_save --output file_name_output.onnx 
+
+Example:
+C:\Users\armuk\AppData\Local\Programs\Python\Python39\python.exe -m tf2onnx.convert --saved-model C:\Users\armuk\OneDrive\Desktop\nzro\up_down --output nzro.onnx < ---- location of the model to be saved
